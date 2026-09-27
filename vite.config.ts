@@ -9,7 +9,7 @@ export default defineConfig({
     port: 5173,
     open: true,
     proxy: {
-      '/api': { target: process.env.API_PROXY_TARGET || 'http://localhost:8000', changeOrigin: true },
+      '/api': { target: process.env.API_PROXY_TARGET || 'https://travel-sathi-be.vercel.app/', changeOrigin: true },
     },
   },
 });
