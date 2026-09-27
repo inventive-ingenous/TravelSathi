@@ -14,7 +14,7 @@ import {
 } from '../lib/googleMaps';
 
 const ENV_MAPS_KEY = import.meta.env?.VITE_GOOGLE_MAPS_API_KEY as string | undefined;
-const API_BASE = ((import.meta.env?.VITE_API_URL as string | undefined) ?? 'http://localhost:8000').replace(/\/$/, '');
+const API_BASE = ((import.meta.env?.VITE_API_URL as string | undefined) ?? 'https://travel-sathi-be.vercel.app/').replace(/\/$/, '');
 
 /** Maps key: frontend .env first, otherwise ask the backend (/api/ai/maps-key). */
 let mapsKeyRequest: Promise<string> | null = null;
