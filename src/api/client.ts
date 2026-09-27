@@ -7,7 +7,7 @@ import type { Experience, ProviderBooking, Trip } from '../lib/types';
 import type { ParsedField } from '../lib/engine';
 import type { PSlot } from '../store/AppStore';
 
-const BASE = (import.meta.env?.VITE_API_URL ?? 'http://localhost:8000').replace(/\/$/, '');
+const BASE = (import.meta.env?.VITE_API_URL ?? 'https://travel-sathi-be.vercel.app/').replace(/\/$/, '');
 
 /** FastAPI reports errors as { detail: string } or, for validation failures, { detail: [{ msg, loc }] } */
 function errorMessage(data: unknown, status: number): string {
